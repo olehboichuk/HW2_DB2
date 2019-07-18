@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css")
+        title sign up
+    body
+        header
+            a(href='#')
+                img(class="sign-logo" src='../img/sign_logo.svg', alt='logo')
+            .goto
+                p='Already have an account? '
+                a(href='./sign_in.html') Log In
+        main
+            .content
+                form
+                    p(class="form__headline--sign-up") Complete your account
+                    input(type="password" class="form__input password" placeholder="Create password")
+                    .complexity
+                        .complexity__item
+                        .complexity__item
+                        .complexity__item
+                    input(type="password" class="form__input" placeholder="Confirm password")
+                    .checkboxs
+                        div(class="pretty p-svg p-curve")
+                            input(type="checkbox")
+                            .state
+                                img(class="svg" src="../img/done.svg")
+                                label(class="form__label label") I agree to the myFixer.com
+                                    a(href="#" class="label__link") Terms of Service
+                        div(class="pretty p-svg p-curve")
+                            input(type="checkbox")
+                            .state
+                                img(class="svg" src="../img/done.svg")
+                                label(class="form__label label") I agree to the myFixer.com
+                                    a(href="#" class="label__link") Privacy Policy
+                    //коли буде хост буде і recaptcha
+                    img(src="../img/recaptcha.svg" style="align-self: flex-start;")
+                    button(class="form__button") Done!
