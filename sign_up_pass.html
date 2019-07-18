@@ -1,0 +1,47 @@
+<!DOCTYPE html><!DOCTYPE js>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css"/>
+    <title>sign up</title>
+  <link href="style/sign_up_pass.css" rel="stylesheet"></head>
+  <body>
+    <header><a href="#"><img class="sign-logo" src="images/2538feb86fcde557079af319f0c55388.svg" alt="logo"/></a>
+      <div class="goto">
+        <p>Already have an account? </p><a href="./sign_in.html">Log In</a>
+      </div>
+    </header>
+    <main>
+      <div class="content">
+        <form>
+          <p class="form__headline--sign-up">Complete your account</p>
+          <input class="form__input password" type="password" placeholder="Create password"/>
+          <div class="complexity">
+            <div class="complexity__item"></div>
+            <div class="complexity__item"></div>
+            <div class="complexity__item"></div>
+          </div>
+          <input class="form__input" type="password" placeholder="Confirm password"/>
+          <div class="checkboxs">
+            <div class="pretty p-svg p-curve">
+              <input type="checkbox"/>
+              <div class="state"><img class="svg" src="images/f655caf580b69433a3354c8f48d0beb8.svg"/>
+                <label class="form__label label">I agree to the myFixer.com<a class="label__link" href="#">Terms of Service</a></label>
+              </div>
+            </div>
+            <div class="pretty p-svg p-curve">
+              <input type="checkbox"/>
+              <div class="state"><img class="svg" src="images/f655caf580b69433a3354c8f48d0beb8.svg"/>
+                <label class="form__label label">I agree to the myFixer.com<a class="label__link" href="#">Privacy Policy</a></label>
+              </div>
+            </div>
+          </div>
+          <!--коли буде хост буде і recaptcha--><img src="images/856801755a9bda726d12220ff8473042.svg" style="align-self: flex-start;"/>
+          <button class="form__button">Done!</button>
+        </form>
+      </div>
+    </main>
+  <script type="text/javascript" src="bundles/sign_up_pass.js"></script></body>
+</html>
